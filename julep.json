@@ -1,0 +1,42 @@
+{
+	"general" : {
+		"username" : "admin",
+		"password" : "admin123",
+		"url" : "https://psvm159.deu.hp.com:8443/oo"
+	},
+
+	"flows" : [
+		{
+			"flow" : "64cdf48b-54ec-4704-a6ad-2ec85c74cecf",
+			"inputs" : {
+				"fail" : "true",
+				"req" : "asdf"
+			},
+			"assert" : {
+				"flowOutput" : {
+					"var1" : "var1",
+					"var2" : "var2"
+				},
+				"executionSummary" : {
+					"resultStatusType": "RESOLVED"
+				}
+			}
+		},
+		{
+			"flow" : "64cdf48b-54ec-4704-a6ad-2ec85c74cecf",
+			"inputs" : {
+				"fail" : "false",
+				"req" : "asdf"
+			},
+			"assert" : {
+				"flowOutput" : {
+					"var1" : "var1",
+					"var2" : "var2"
+				},
+				"executionSummary" : {
+					"resultStatusType": "ERROR"
+				}
+			}
+		}
+	]
+}
