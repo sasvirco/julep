@@ -6,8 +6,21 @@
   flows: 
     - 
       uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
+      name : "Testing if flow will fail"
       inputs: 
         fail: "true"
+        req: "asdf"
+      assert: 
+        flowOutput: 
+          var1: "var1"
+          var2: "var2"
+        executionSummary: 
+          resultStatusType: "ERROR"
+    - 
+      uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
+      name : "Testing if flow will succeed "
+      inputs: 
+        fail: "false"
         req: "asdf"
       assert: 
         flowOutput: 
@@ -17,6 +30,7 @@
           resultStatusType: "RESOLVED"
     - 
       uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
+      name : "Testing if flow will succeed 2"
       inputs: 
         fail: "false"
         req: "asdf"
@@ -25,15 +39,4 @@
           var1: "var1"
           var2: "var2"
         executionSummary: 
-          resultStatusType: "ERROR"
-    - 
-      uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
-      inputs: 
-        fail: "false"
-        req: "asdf"
-      assert: 
-        flowOutput: 
-          var1: "var1"
-          var2: "var2"
-        executionSummary: 
-          resultStatusType: "ERROR"
+          resultStatusType: "RESOLVED"

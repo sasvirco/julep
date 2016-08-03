@@ -9,8 +9,7 @@ from base64 import encodestring
 class hpoo():
 
 	def __init__(self, config = None, flow = None):
-		logging.info('initiating hpoo class')
-		
+
 		self.config = config
 		self.flow = flow
 
@@ -108,4 +107,22 @@ class hpoo():
 			raise Exception(r.reason)
 
 		logging.debug(r.text)
-		return json.loads(r.text)
+		result = json.loads(r.text)
+		self.flow_result = result
+		
+		return result
+	
+	def get_run_id(self) :
+		return self.run_id
+
+	def get_error(self) :
+		return self.error
+
+	def get_status(self) :
+		return self.status
+
+	def get_flow_result(self) :
+		return self.flow_result
+
+	def get_flow(self) :
+		return self.flow
