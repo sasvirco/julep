@@ -3,12 +3,9 @@ import json
 import logging
 import sys
 import argparse
-import requests
-import requests.packages.urllib3
 import yaml
 import time
 import hpoo as oo
-from base64 import encodestring
 from junit_xml import TestSuite, TestCase
 
 def main () :
@@ -119,7 +116,7 @@ def main () :
 		else :
 			logging.info("Adding succesfull test")
 			duration = int(result['executionSummary']['endTime'] - result['executionSummary']['startTime'])
-			tc = TestCase(testname,flow['uuid'],duration,result['executionSummary']['resultStatusType'],'')
+			tc = TestCase(testname,flow['uuid'],duration/1000.0,result['executionSummary']['resultStatusType'],'')
 			testresults.append(tc)
 
 	

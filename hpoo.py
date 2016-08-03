@@ -98,7 +98,7 @@ class hpoo():
 
 	def collect(self) :
 
-		logging.info('Entering collect_result')
+		logging.info('Entering collect_result for runId '+self.run_id)
 
 		url = self.config['url'] + '/rest/v1/executions/' + self.run_id + '/execution-log'
 
