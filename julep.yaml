@@ -1,8 +1,8 @@
 ---
   general: 
     username: "admin"
-    password: "admin123"
-    url: "https://psvm159.deu.hp.com:8443/oo"
+    password: "secret"
+    url: "https://localhost:8443/oo"
   flows: 
     - 
       uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
@@ -30,7 +30,7 @@
           resultStatusType: "RESOLVED"
     - 
       uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
-      name : "Testing if flow will succeed 2"
+      name : "Testing other features"
       inputs: 
         fail: "false"
         req: "asdf"
@@ -40,3 +40,16 @@
           var2: "var2"
         executionSummary: 
           resultStatusType: "RESOLVED"
+    - 
+      uuid: "64cdf48b-54ec-4704-a6ad-2ec85c74cecf"
+      name : "Testing result statuses"
+      inputs: 
+        fail: "false"
+        req: "asdf"
+      assert: 
+        flowOutput: 
+          var1: "var1"
+          var2: "var2"
+        executionSummary: 
+          resultStatusType: "RESOLVED"
+
