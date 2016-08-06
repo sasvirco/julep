@@ -1,4 +1,4 @@
-# julep
+# Julep
 
 Julep is a simple testing framework for HP Operation Orchestration. It produces JUnit compatible test results which makes it very convinient to integrate with Jenkins.
 
@@ -114,7 +114,7 @@ The configfile can be either in json or yaml format. It includes 2 objects. Gene
 - inputs - The inputs with which we want to run the flow. Take into consideration, that all mandatory inputs will have to be supplied.
 - assert - Assert contains an object that has the same keys and values as the output returned by the execution log. Julep will assert the result with your expected vaulues and fail the test if they do not match. So far the most used ones are flowOutput, that contains the returned by the flow results and the resultStatusType from the executionSummary object, that contains RESOLVED or ERROR depending whether the flow failed or succeeded.
 
-### Example JUNit output
+### Example JUnit output
 ```
 <?xml version="1.0" ?>
 <testsuites errors="0" failures="0" tests="3" time="0.454">
