@@ -101,6 +101,19 @@ The configfile can be either in json or yaml format. It includes 2 objects. Gene
         executionSummary: 
           resultStatusType: "RESOLVED"
 ```
+
+#Configuration options
+##General 
+- url - the url for the hpoo server
+- username - the username to connect with
+- password - the password
+
+## Flows 
+- uuid  - The UUID of the flow that we want to test
+- name  - A meaningful name for our test (e.g "Deploy chef client via ssh")
+- inputs - The inputs with which we want to run the flow. Take into consideration, that all mandatory inputs will have to be supplied.
+- assert - Assert contains an object that has the same keys as the output returned by the execution log. flowOutput contains the outputs flow will return and we want to check against predefined values, where executionSummary contains other flow related parameters, from which most often we want to check for the resultStatusType (RESOLVED for success or ERROR for failed flows)
+
 ### Example JUNit output
 ```
 <?xml version="1.0" ?>
