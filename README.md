@@ -11,7 +11,7 @@ usage: julep.py [-h] [--configfile CONFIGFILE] [--loglevel LOGLEVEL]
                 [--configfmt CONFIGFMT] [--delay DELAY]
                 [--junitoutput JUNITOUTPUT]
 
-Run HP OO 10 flow from the command line
+HP Operation Orchestration testing tool
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -31,6 +31,7 @@ optional arguments:
   --delay DELAY         Delay in seconds to wait between starting flows
   --junitoutput JUNITOUTPUT
                         Delay in seconds to wait between starting flows
+
 ```
 
 - quiet - By default Julep prints detailed logs in both logfile and console. The quiet option will suppress stdout messages.

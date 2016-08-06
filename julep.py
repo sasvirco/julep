@@ -19,7 +19,7 @@ def main () :
 	}
 	
 
-	parser = argparse.ArgumentParser(description = 'Run HP OO 10 flow from the command line')
+	parser = argparse.ArgumentParser(description = 'HP Operation Orchestration testing tool')
 	parser.add_argument('--configfile', default = 'julep.yaml', help='Configfile with hpoo flow testcases')
 	parser.add_argument('--loglevel', default = 'INFO', help='FATAL, ERROR, WARNING, INFO, DEBUG')
 	parser.add_argument('--logfile', default = 'julep.log', help='Logfile to store messages (Default: julep.log)')
