@@ -46,7 +46,7 @@ optional arguments:
 The configfile can be either in json or yaml format. It includes 2 objects. General, where the url for the hpoo service and credentials are defined, and the flows, that contains an array of objects where information about the tests we want to make resides.
 
 ###Example in yaml
-```
+```yaml
 ---
   general: 
     username: "admin"
@@ -116,7 +116,7 @@ The configfile can be either in json or yaml format. It includes 2 objects. Gene
 - assert - Assert contains an object that has the same keys and values as the output returned by the execution log. Julep will assert the result with your expected vaulues and fail the test if they do not match. So far the most used ones are flowOutput, that contains the returned by the flow results and the resultStatusType from the executionSummary object, that contains RESOLVED or ERROR depending whether the flow failed or succeeded.
 
 ### Example JUnit output
-```
+```xml
 <?xml version="1.0" ?>
 <testsuites errors="0" failures="0" tests="3" time="0.454">
 	<testsuite errors="0" failures="0" name="ootests" skipped="0" tests="3" time="0.454">
