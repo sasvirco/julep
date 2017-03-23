@@ -42,10 +42,10 @@ optional arguments:
 - trustcert - trust the ssl certificates, usefull with self-signed ones
 - loglevel - defines the verbosity of the logs. Info provides information about what is currently going on, while DEBUG prints very detailed requests and reponses, very usefull with identifying issues.
 
-#Config file
+# Config file
 The configfile can be either in json or yaml format. It includes 2 objects. General, where the url for the hpoo service and credentials are defined, and the flows, that contains an array of objects where information about the tests we want to make resides.
 
-###Example in yaml
+### Example in yaml
 ```yaml
 ---
   general: 
@@ -103,8 +103,8 @@ The configfile can be either in json or yaml format. It includes 2 objects. Gene
           resultStatusType: "RESOLVED"
 ```
 
-#Configuration options
-##General 
+# Configuration options
+## General 
 - url - the url for the hpoo server
 - username - the username to connect with
 - password - the password
