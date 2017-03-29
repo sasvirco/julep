@@ -29,7 +29,7 @@ def main () :
 	parser.add_argument('--trustcert', action='store_true', help='Trust self-signed certs')
 	parser.add_argument('--configfmt', default = 'yaml', help="Configfile format - json or yaml. Default json.")
 	parser.add_argument('--delay', default = 15, type = int, help="Delay in seconds to wait between starting flows")
-	parser.add_argument('--junitoutput', default = 'julepout.xml', help="Delay in seconds to wait between starting flows")
+	parser.add_argument('--junitoutput', default = 'julepout.xml', help="The location of the junit xml output. Default julepout.xml")
 
 	args = parser.parse_args()
 	loglevel = levels.get(args.loglevel, logging.NOTSET)
