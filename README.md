@@ -30,8 +30,7 @@ optional arguments:
                         Configfile format - json or yaml. Default json.
   --delay DELAY         Delay in seconds to wait between starting flows
   --junitoutput JUNITOUTPUT
-                        Delay in seconds to wait between starting flows
-
+                        The location of the junit xml output. Default julepout.xml
 ```
 
 - quiet - By default Julep prints detailed logs in both logfile and console. The quiet option will suppress stdout messages.
